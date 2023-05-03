@@ -1,0 +1,12 @@
+[
+    {
+        "nama" : "Leonardo",
+        "npm" : 14081022049,
+        "status_mahasiswa" : true
+    },
+    {
+        "nama" : "Marliano",
+        "npm" : 14081022021,
+        "status_mahasiswa" : true
+    }
+]
