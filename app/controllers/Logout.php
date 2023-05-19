@@ -2,8 +2,9 @@
 
 class Logout{
     public function index(){
-        unset($_SESSION['admin']);
-        header('Location: ' . BASEURL . '/login');
+        unset($_SESSION['user_status']);
+        unset($_SESSION['username']);
+        header('Location: ' . BASEURL);
     
     }
 }

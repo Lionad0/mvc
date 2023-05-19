@@ -14,4 +14,12 @@ class Controller{
         $this->view('notFound/404');
     }
     
+    public function dd($var){
+        echo "<pre>";
+        var_dump($var);
+        echo "</pre>";
+
+        die();
+    }
+
 }

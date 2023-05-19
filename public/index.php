@@ -9,13 +9,13 @@ require_once '../app/init.php';
 
 $app = new App();
 
-$data_json = [
-    "nama" => "jesen",
-    "npm" => 14081022002,
-    "status_mahasiswa" => true
-];
+// $data_json = [
+//     "nama" => "jesen",
+//     "npm" => 14081022002,
+//     "status_mahasiswa" => true
+// ];
 
-echo json_encode($data_json);
+// echo json_encode($data_json);
 
 
 // $contents = file_get_contents("data.json");

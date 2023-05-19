@@ -11,7 +11,19 @@
     <nav>
         <a href="<?= BASEURL; ?>">Home</a>
         <a href="<?= BASEURL; ?>/About">About</a>
-        <a href="<?= BASEURL; ?>/Menu">Menu</a>
-        <a href="<?= BASEURL; ?>/logout">Log out</a>
+        
+        <?php if(!isset($_SESSION['user_status'])) { ?>
+            <a href="<?= BASEURL; ?>">Menu</a>
+            <a href="<?= BASEURL; ?>/Reservation">Reservation</a>
+            <a href="<?= BASEURL; ?>/Login">Log in</a>
+            <?php } else { ?>
+                <?php if($_SESSION['user_status'] == 'admin'){ ?>
+                    <a href="<?= BASEURL; ?>/Menu">Menu Info</a>
+                <?php } else { ?>
+                    <a href="<?= BASEURL; ?>/Reservation">Reservation</a>
+                <?php } ?>
+            <a href="<?= BASEURL; ?>/Logout">Log out</a>
+        <?php } ?>
     </nav>
 
+   

@@ -4,8 +4,8 @@ class Login extends Controller {
     public function index(){
         $data['title'] = "Login";
 
-        if(isset($_SESSION['admin']))
-            header("Location: " . BASEURL);
+        // if(isset($_SESSION['admin']))
+        //     header("Location: " . BASEURL);
 
         if(isset($_POST['login']) ){
             if($this->model('User_model')->user_auth($_POST)){
@@ -16,8 +16,5 @@ class Login extends Controller {
         $this->view('auth/login', $data);
 
     }
-
-
-
 
 }

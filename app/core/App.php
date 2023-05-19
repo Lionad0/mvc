@@ -9,7 +9,7 @@ class App{
         $url = $this->parseURL();
 
 
-        $this->auth($url);
+        // $this->auth($url);
 
         if(file_exists('../app/controllers/' . $url[0] . '.php')){
             $this->controller = $url[0];
@@ -63,11 +63,11 @@ class App{
         }
     }
 
-    public function auth($url){
-        if($url[0] != 'login'){
-            if(!isset($_SESSION['admin']))
-                header('Location: ' . BASEURL . '/login');
-        }
+    // public function auth($url){
+    //     if($url[0] != 'login'){
+    //         if(!isset($_SESSION['admin']))
+    //             header('Location: ' . BASEURL . '/login');
+    //     }
     
-    }
+    // }
 }
