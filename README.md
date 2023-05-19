@@ -10,3 +10,6 @@ SETUP APP
 1. Masuk ke folder xamp -> htdocs
 2. Git clone ke sana
 
+CARA JALANIN
+1. Aktifin Apache dan Mysql
+2. Buka browser dan masuk ke url: localhost/mvc/public
