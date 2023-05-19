@@ -2,9 +2,10 @@
 
 SETUP MYSQL
 1. Pastikan untuk sudah ada XAMPP
-2. Download folder tabel mysql 'relearn.zip' di discord
-3. Masuk ke folder xampp -> mysql -> data. (xampp/mysql/data)
-4. Pindahin unzip relearn dan simpan di (xampp/mysql/data)
+2. Download file sql di discord
+3. Buka phpmyadmin, buat database "relearn".
+4. Masuk ke databse itu, lalu pilih Import. Upload file sql.
+5. Apakaah berhasil?
 
 SETUP APP
 1. Masuk ke folder xamp -> htdocs
