@@ -14,6 +14,11 @@ class Menu_model{
         return $this->db->resultSet();
     }
 
+    public function getAllMenus(){
+        $this->db->query("SELECT * FROM $this->table");
+        return $this->db->resultSet();
+    }
+
     public function getMenuDetails($id){
         $this->db->query("SELECT * FROM $this->table WHERE id_menu=:id");
         $this->db->bind('id', $id);
