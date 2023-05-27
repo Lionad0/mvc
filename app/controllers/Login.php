@@ -13,8 +13,10 @@ class Login extends Controller {
                 exit;
             }
         }
+        $this->view('template/header', $data);
         $this->view('auth/login', $data);
-
+        $this->view('template/footer');
+        
     }
 
 }

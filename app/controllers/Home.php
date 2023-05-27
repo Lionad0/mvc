@@ -8,12 +8,12 @@ class Home extends Controller{
             $user_details = $this->model('User_model')->getUserDatas($_SESSION['username']);
         else
             $user_details = NULL;
+            
         $data['title'] = "Home";
         // var_dump($user_details);
         $this->view('template/header', $data);
         $this->view('home/index', $user_details);
-        $this->view('template/footer');
+        $this->view('template/footer', $data);
     }
-
 
 }

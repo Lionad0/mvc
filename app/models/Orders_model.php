@@ -30,7 +30,9 @@ class Orders_model {
             if($this->db->rowCount() <= 0)
                 break;
         }
+        echo $this->db->rowCount();
 
+        return $this->db->rowCount();
     }
 
     

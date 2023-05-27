@@ -10,6 +10,10 @@ class App{
 
 
         // $this->auth($url);
+        // echo $url[0];
+        $url[0] = ucfirst($url[0]);
+        // echo $url[0];
+        // die();
 
         if(file_exists('../app/controllers/' . $url[0] . '.php')){
             $this->controller = $url[0];
@@ -59,7 +63,7 @@ class App{
             $url = explode('/', $url);
             return $url;
         }else{
-            return ["Home", "index"];
+            return ["home", "index"];
         }
     }
 

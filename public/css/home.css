@@ -1,0 +1,120 @@
+
+
+.titles{
+    display: flex;
+    
+}
+.main-title
+{
+    position: absolute;
+    width: 388px;
+    height: 94px;
+    left: 478px;
+    top: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 94px;
+    color: #9E1819;
+    
+}
+
+.second-title
+{
+    position: absolute;
+    width: 268px;
+    height: 94px;
+    left: 888px;
+    top: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #FFC700;
+}
+
+.shrimp{
+    position: absolute;
+    width: 426px;
+    height: 234px;
+    left: 728px;
+    top: 206px;
+    
+    font-family: 'Roboto';
+    font-size: 100px;
+    line-height: 117px;
+    text-align: center;
+    
+    color: #9E1819;
+    
+}
+
+.order{
+    position: absolute;
+    width: 300px;
+    height: 71.15px;
+    left: 830px;
+    top: 481px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+    font-size: 40px;
+    line-height: 47px;
+    border-color: none;
+    background-color: #9E1819;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+.order:hover{
+    cursor: grab;
+    background-color: #650a0a;
+}
+
+.merah{
+    position: absolute;
+    width: 1174.36px;
+    height: 1342.1px;
+    left: -777px;
+    top: 100px;
+
+    background: #9E1819;
+    transform: rotate(-21.12deg);
+
+}
+
+.kuning{
+    content: '';
+    position: absolute;
+    width: 1403.06px;
+    height: 1603.46px;
+    left: 1215px;
+    top: 1565.64px;
+
+    background: #FFC700;
+    transform: rotate(-21.12deg);
+
+}
+
+.burger {
+    position: absolute;
+    width: 609px;
+    height: 609px;
+    left: 0px;
+    top: 55px;
+    
+    filter: drop-shadow(70px 40px 10px rgba(0, 0, 0, 0.32));
+    
+}
+
+
+/*RESERVATION PAGE*/
