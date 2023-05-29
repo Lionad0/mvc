@@ -9,6 +9,7 @@ body{
 }
 
 nav {
+
     padding: 10px;
     position: fixed;
     background-color: #9E1819;
@@ -30,3 +31,26 @@ nav {
     width: 40px;
     height: 40px;
 }
+
+/* .footer{
+    background-color: #9E1819;
+    padding: 50px;
+} */
+
+body::-webkit-scrollbar {
+    width: 5px;
+    
+}
+
+body::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    background-color: #9E1819;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #680f0f;
+    /* background-color: #9E1819; */
+    /* outline: 1px solid #9E1819; */
+    /* outline: none; */
+}
+  

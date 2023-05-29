@@ -1,12 +1,290 @@
-.container {
-    display: flex;
-    background-color: grey;
-    justify-content: space-around;
-    margin: auto;
+.container{
+    /* background-color: bisque;
+    z-index: -99999; */
 }
+
+.kuning{
+    position: absolute;
+    width: 2000px;
+    height: 1500px;
+    z-index: -99;
+    left: -550px;
+    top: -1100px;
+    background-color: #9E1819;
+
+    transform: rotate(-21.12deg);    
+}
+
+.merah{
+    position: absolute;
+    width: 2000px;
+    height: 1500px;
+    z-index: -100;
+    right: -550px;
+    top: -1000px;
+    
+    background-color: #FFC700;
+    transform: rotate(21.12deg);   
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    color: #9E1819;
+}
+
+
+
+.reservation-section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+form {
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-page{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #9E1819;
+    border-radius: 10px;
+    height: 80vh;
+    box-shadow: 2px 2px 10px rgb(114, 114, 114);
+
+
+}
+
+
+.reservation-page h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reservation-page form label{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #9E1819;
+
+}
+
+
+.reservation-page form input{
+    padding: 3px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px solid black;
+    /* border-style: none; */
+
+}
+
+.reservation-page h3, .reservation-page h4{
+    font-family: 'Poppins', sans-serif;
+    color: #9E1819;
+
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexed{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.flexed input{
+    width: 90%;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.email input{
+    width: 95%;
+}
+
+.reserve-date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.reserve-date input{
+    width: 35%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.orderInfo h3{
+    width: 95%;
+    border-bottom: 1px solid #9E1819;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.orderList{
+    width: 95%;
+    border-radius: 4px;
+    padding: 10px;
+    height: 120px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.orderList::-webkit-scrollbar {
+    width: 5px;
+}
+   
+.orderList::-webkit-scrollbar-thumb {
+    background-color: #9E1819;
+}
+
+.menu_detail{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* width: 100%; */
+}
+/* 
+.controller{
+    display: flex;
+    align-items: center;
+} */
+
+.menu_detail .removeItem{
+    padding: 7px 8px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background-color: #9E1819;
+
+}
+
+
+.orderInfo .orderList .menu_detail input{
+    padding: 3px 0;
+    width: 35px;
+    font-size: 16px;
+    /* padding: 10px; */
+}
+
+.desc{
+    margin-bottom: 10px;
+
+}
+
+.desc textarea{
+    width: 95%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.orderBtn{
+    padding: 5px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #9E1819;
+}
+
+
+/* MENU BOOK */
+.menu-book {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-color: white;
+    width: 70vh;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgb(114, 114, 114);
+
+
+}
+
+.menu-book .title{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9E1819;
+
+}
+
+.menu-book::-webkit-scrollbar {
+    width: 5px;
+}
+   
+  /* .menu-book::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+    */
+.menu-book::-webkit-scrollbar-thumb {
+background-color: #9E1819;
+}
+  
 
 .menu_item {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #9E1819;
 }
+
+.ymm {
+    display: flex;
+    align-items: center;
+}
+
+.menu_info{
+    margin-left: 15px;
+    width: 130px;
+}
+
+.image {
+    background-color: white;
+    max-width: 100px;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    
+}
+.menuImage {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(114, 114, 114);
+    /* max-width: 120px; */
+    /* object-fit: cover; */
+}
+
+.menu_name{
+    font-family: 'Poppins', sans-serif;
+}
+
+#addItem {
+    border: none;
+    background-color: #9E1819;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 15px;
+    color: white;
+}
+

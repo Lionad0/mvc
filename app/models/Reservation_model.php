@@ -45,10 +45,20 @@ class Reservation_model{
     }
 
     public function getAllReservationData(){
-        $query = "SELECT * FROM $this->table";
+        $query = "SELECT * FROM $this->table ORDER BY status_reservasi ASC";
+        $this->db->query($query);
+        return $this->db->resultSet();
+    }
+    
+    public function updateReservationStatus($id){
+        $id = (int) $id;
+      
+        $query = "UPDATE $this->table SET status_reservasi = '1' WHERE kode_reservasi = :kode_reservasi";
+        $this->db->query($query);
+        $this->db->bind('kode_reservasi', $id);
+        $this->db->execute();
+
+        return $this->db->rowCount();
 
     }
-
-
-
 }

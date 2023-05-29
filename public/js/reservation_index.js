@@ -33,19 +33,22 @@
 
         console.log(menuID)
         let cartRow = document.createElement('div')
-        cartRow.innerHTML = ` 
-            <div class="menu_info">
-                <p class="menu_name">${menuName} - <span class="menu_price">Rp${menuPrice}</span></p>
-                <input type="hidden" value="${menuID}" name="menuID[]">
-                <input type="number" value="1" min="1" name="qty[]">
-                <input type="hidden" value="${menuPrice}" name="price[]">
-                <button type="button" class="removeItem">REMOVE</button>
-            </div>`;    
+        cartRow.classList.add('menu_detail')
+        cartRow.innerHTML = `
+            <p class="menu_name">${menuName} - <span class="menu_price">Rp${menuPrice}</span></p>
+            <input type="hidden" value="${menuID}" name="menuID[]">
+            <input type="hidden" value="${menuPrice}" name="price[]">
+            <div class="controller">
+            <input type="number" value="1" min="1" name="qty[]">
+            <button type="button" class="removeItem">REMOVE</button>
+        `;    
                 
         orderList.append(cartRow)
+
+        // console.log(orderList);
         cartRow.getElementsByClassName('removeItem')[0].addEventListener('click', function(e){
-            console.log(event.target)
-            let menuInfo = e.target.parentElement
+            // console.log(event.target.paren)
+            let menuInfo = e.target.parentElement.parentElement
             menuInfo.remove()
         })
 

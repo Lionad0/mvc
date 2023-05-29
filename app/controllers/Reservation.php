@@ -9,6 +9,11 @@ class Reservation extends Controller{
     }
 
     public function index(){
+        if(isset($_SESSION['username'])){
+            $user_details = $this->model('User_model')->getUserDatas($_SESSION['username']);
+            $index['user_details'] = $user_details;
+        }
+
         if(isset($_POST['reservation'])){
             if($this->model('Reservation_model')->insertReservasi($_POST) > 0){
                 $reserveID = $this->model('Reservation_model')->getMenuID();
@@ -35,9 +40,9 @@ class Reservation extends Controller{
         }
    
         $data['title'] = "Reservation";
-        $menu = $this->model('Menu_model')->getAllmenus();
+        $index['menu'] = $this->model('Menu_model')->getAllmenus();
         $this->view('template/header', $data);
-        $this->view('reservation/index', $menu);
+        $this->view('reservation/index', $index);
         $this->view('template/footer', $data);
         
     }

@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+     <!-- Swiper  -->
+    <?= ($data['title'] == 'Home' ? '<link rel="stylesheet" href="' . BASEURL . '/css/swiper-bundle.min.css">' : ''); ?>
     
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style.css">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/<?= $data['title'] ?>.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/<?= lcfirst($data['title']); ?>.css?version=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style.css?version=<?= time(); ?>">
     
     <title><?php echo $data['title']; ?></title>
 </head>
@@ -27,7 +29,8 @@
                     <?php if($_SESSION['user_status'] == 'admin'){ ?>
                         <a href="<?= BASEURL; ?>/dashboard">Dashboard</a>
                     <?php } else { ?>
-                        <a href="<?= BASEURL; ?>/reservation"><?= BASEURL; ?>/assets/Icons/reservation.png" alt=""></a>
+                        <a href="<?= BASEURL; ?>/menu" class="menu"><img class="icon" src="<?= BASEURL; ?>/assets/Icons/Hamburger.png" alt=""></a>
+                        <a href="<?= BASEURL; ?>/reservation"><img class="icon" src="<?= BASEURL; ?>/assets/Icons/reservation.png" alt=""></a>
                     <?php } ?>
                 <a href="<?= BASEURL; ?>/logout">Log out</a>
             <?php } ?>
